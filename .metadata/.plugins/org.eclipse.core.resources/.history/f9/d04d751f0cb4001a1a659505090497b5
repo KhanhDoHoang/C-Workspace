@@ -1,0 +1,19 @@
+/*
+ ============================================================================
+ Name        : Quiz3.c
+ Author      : hoangdo
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int max(int int1, int int2);
+
+int main(void) {
+	char buffer[17] = "The length is 16";
+}

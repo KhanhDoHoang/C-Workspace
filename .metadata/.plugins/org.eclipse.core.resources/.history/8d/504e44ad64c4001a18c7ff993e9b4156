@@ -1,0 +1,117 @@
+#include<stdio.h>
+
+/*Course structure*/
+typedef struct Course{
+	char coursecode[7];
+	char coursename[24];
+} Course;
+
+/*Student structure*/
+typedef struct Student{
+	int id;
+	char firstname[19];
+	char lastname[19];
+
+} Student;
+
+/*Set student information*/
+
+struct Student setStudent(void) {
+	Student student;
+	student.id = getStudenId("Enter Id:");
+	printf("Enter first name: ");
+	scanf("%s", student.firstname);
+	printf("Enter last name: ");
+	scanf("%s", student.lastname);
+	return student;
+}
+
+/*Set Course information*/
+
+/* *
+ * This is getStudent to print out when filling is done
+ */
+
+void getStudent(Student student){
+	printf("ID: %d\n", student.id);
+	printf("First name: %s\n", student.firstname);
+	printf("Last name: %s\n", student.lastname);
+}
+
+/* *
+ * Get student Id and check for amount
+ */
+
+int getStudentId(char *string) {
+	int x = 0;
+	do{
+		printf(string);
+		scanf("%d", &x);
+		if (x < 10000 || x > 99999) {
+			printf("Invalid student id. Please enter a 5 digit integer\n");
+		}
+	} while(x < 10000 || x > 99999);
+	return x;
+}
+
+/* *
+ * This is main method for general input
+ */
+
+int main(void){
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stdout, NULL, _IONBF, 0);
+
+	printf("How many students would you like to register: ");
+	int numberOfStudents;
+	scanf("%d", &numberOfStudents);
+	Student studArr[numberOfStudents];
+
+	for(int i = 0; i < numberOfStudents; i++){
+		printf("Enter information for student:\n");
+		char tempStr[75];
+		sprintf(tempStr, "Please enter the student ID for student %d: ",(i+1));
+
+		int noDupes = 1;
+		while (noDupes) {
+			studArr[i] = setStudent();
+
+			noDupes = 0;
+			for(int j = 0; j < i; j++){
+				if (studArr[i].id == studArr[j].id){
+					noDupes = 1;
+					break;
+				}
+			}
+			// error message if it didn't work
+			if (noDupes == 1) {
+				printf("Error: student ID %d already entered. Try again.\n", studArr[i].id);
+			} else {
+				break;
+			}
+		}
+		//----------------------------------------------
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

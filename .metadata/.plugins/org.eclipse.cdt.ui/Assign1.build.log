@@ -1,0 +1,25 @@
+20:03:55 **** Build of configuration Debug for project Assign1 ****
+make all 
+Building file: ../src/Assign1.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assign1.d" -MT"src/Assign1.o" -o "src/Assign1.o" "../src/Assign1.c"
+Finished building: ../src/Assign1.c
+ 
+Building file: ../src/Test.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Test.d" -MT"src/Test.o" -o "src/Test.o" "../src/Test.c"
+Finished building: ../src/Test.c
+ 
+Building file: ../src/helper.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/helper.d" -MT"src/helper.o" -o "src/helper.o" "../src/helper.c"
+Finished building: ../src/helper.c
+ 
+Building target: Assign1.exe
+Invoking: Cygwin C Linker
+gcc  -o "Assign1.exe" ./src/Assign1.o ./src/Test.o ./src/helper.o   
+Finished building target: Assign1.exe
+ 
+
+20:03:57 Build Finished. 0 errors, 0 warnings. (took 1s.909ms)
+

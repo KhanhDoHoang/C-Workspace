@@ -1,0 +1,14 @@
+15:27:11 **** Incremental Build of configuration Debug for project Asignment1 ****
+make all 
+Building file: ../src/Assignment1.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.c"
+../src/Assignment1.c:13:10: fatal error: helper.h: No such file or directory
+   13 | #include "helper.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/Assignment1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+15:27:11 Build Failed. 2 errors, 0 warnings. (took 319ms)
+

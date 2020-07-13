@@ -1,0 +1,16 @@
+21:52:02 **** Incremental Build of configuration Debug for project DemoWeek3 ****
+make all 
+Building target: DemoWeek3.exe
+Invoking: Cygwin C Linker
+gcc  -o "DemoWeek3.exe" ./Pointers.o   
+/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../x86_64-pc-cygwin/bin/ld: ./Pointers.o: in function `main':
+/cygdrive/c/Users/katie/CST8234-Workspace/DemoWeek3/Debug/../Pointers.c:8: undefined reference to `setvbuff'
+/cygdrive/c/Users/katie/CST8234-Workspace/DemoWeek3/Debug/../Pointers.c:8:(.text+0x32): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `setvbuff'
+/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../x86_64-pc-cygwin/bin/ld: /cygdrive/c/Users/katie/CST8234-Workspace/DemoWeek3/Debug/../Pointers.c:9: undefined reference to `setvbuff'
+/cygdrive/c/Users/katie/CST8234-Workspace/DemoWeek3/Debug/../Pointers.c:9:(.text+0x54): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `setvbuff'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:31: DemoWeek3.exe] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+21:52:03 Build Failed. 6 errors, 0 warnings. (took 302ms)
+

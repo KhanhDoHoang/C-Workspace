@@ -1,0 +1,34 @@
+21:52:02 **** Incremental Build of configuration Debug for project DeleteStack ****
+make all 
+Building file: ../Main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.c"
+../Main.c: In function 'display':
+../Main.c:7:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+    7 | printf("Stack underflow\n"); // Stack is empty
+      | ^~~~~~
+../Main.c:7:1: warning: incompatible implicit declaration of built-in function 'printf'
+../Main.c:1:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+  +++ |+#include <stdio.h>
+    1 | #define LIMIT 100
+../Main.c:11:1: warning: incompatible implicit declaration of built-in function 'printf'
+   11 | printf("The elements of the stack are:\n");
+      | ^~~~~~
+../Main.c:11:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Main.c:5:3: warning: 'top' is used uninitialized in this function [-Wuninitialized]
+    5 | if(top == -1)
+      |   ^
+Finished building: ../Main.c
+ 
+Building target: DeleteStack.exe
+Invoking: Cygwin C Linker
+gcc  -o "DeleteStack.exe" ./Main.o   
+/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../x86_64-pc-cygwin/bin/ld: /usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../lib/libcygwin.a(libcmain.o): in function `main':
+/usr/src/debug/cygwin-3.1.5-1/winsup/cygwin/lib/libcmain.c:37: undefined reference to `WinMain'
+/usr/src/debug/cygwin-3.1.5-1/winsup/cygwin/lib/libcmain.c:37:(.text.startup+0x82): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `WinMain'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:31: DeleteStack.exe] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+21:52:02 Build Failed. 3 errors, 4 warnings. (took 554ms)
+

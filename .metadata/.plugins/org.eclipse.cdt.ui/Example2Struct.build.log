@@ -1,0 +1,6 @@
+11:06:25 **** Incremental Build of configuration Debug for project Example2Struct ****
+make all 
+make: Nothing to be done for 'all'.
+
+11:06:25 Build Finished. 0 errors, 0 warnings. (took 95ms)
+

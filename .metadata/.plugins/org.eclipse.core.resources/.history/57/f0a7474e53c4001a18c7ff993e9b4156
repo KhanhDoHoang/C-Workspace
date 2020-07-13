@@ -1,0 +1,42 @@
+#include<stdio.h>
+
+/*Course structure*/
+struct Course{
+	char coursecode[7];
+	char coursename[24];
+};
+
+/*Student structure*/
+struct Student{
+	int id;
+	char firstname[19];
+	char lastname[19];
+
+};
+
+struct student setStudent(void) {
+	struct Student student;
+	printf("Enter Id: ");
+	scanf("%d", &student.id);
+	printf("Enter first name: ");
+	scanf("%s", student.firstname);
+	printf("Enter last name: ");
+	scanf("%s", student.lastname);
+	return student;
+}
+
+void getStudent(struct Student student){
+	printf("ID: %d\n", student.id);
+	printf("First name: %s\n", student.firstname);
+	printf("Last name: %s\n", student.lastname);
+}
+
+int main(void){
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stdout, NULL, _IONBF, 0);
+
+	printf("How many students would you like to register: ");
+	int numberOfStudents;
+	scanf("%d", &numberOfStudents);
+	struct Student studArr[]
+}

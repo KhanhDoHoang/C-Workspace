@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Lab 3/src/Lab 3.c&apos; to &apos;makefile_v1.c&apos;" description="Rename resource &apos;Lab 3.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Lab 3.c" name="makefile_v1.c" stamp="1590870590278" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Lab 3/src/makefile_v1.c&apos; to &apos;makefile_v1&apos;" description="Rename resource &apos;makefile_v1.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/makefile_v1.c" name="makefile_v1" stamp="1590870607895" updateReferences="true"/>
+</session>

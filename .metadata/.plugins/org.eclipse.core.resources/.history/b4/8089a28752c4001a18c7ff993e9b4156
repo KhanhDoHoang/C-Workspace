@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+/*Course structure*/
+struct Course{
+	char coursecode[7];
+	char coursename[24];
+};
+
+/*Student structure*/
+struct Student{
+	int id;
+	char firstname[19];
+	char lastname[19];
+
+};

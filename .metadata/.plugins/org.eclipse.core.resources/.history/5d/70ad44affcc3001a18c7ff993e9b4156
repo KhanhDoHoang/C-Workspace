@@ -1,0 +1,61 @@
+///*
+//============================================================================
+//Name : main.c
+//Author : <<< replace with your hoang do (040961749) >>>
+//Version : Lab 4
+//Description : structs in C, Ansi-style
+//Status :
+//Builds clean; no warning(s) : << true xor false >>
+//Requirement #1 - struct Student : << complete xor not complete >>
+//Requirement #2 - struct Course : << complete xor not complete >>
+//Requirement #3 - typedef Course struct : << complete xor not complete >>
+//Requirement #4 - Prompt for number of students : << complete xor not complete >>
+//Requirement #5 - Prompt for student information: << complete xor not complete >>
+//Requirement #6 - Prompt for course information : << complete xor not complete >>
+//Requirement #7 - Display registration : << complete xor not complete >>
+//============================================================================
+//*/
+//
+//#include <stdlib.h>
+//#include <stdio.h>
+//struct student {
+//	char firstName[19];
+//	char lastName[19];
+//	int studentId;
+//	struct course;
+//} s[10];
+//
+//struct Course {
+//   char  title[50];
+//   char  author[50];
+//   char  subject[100];
+//   int   book_id;
+//} course;
+//
+//int main() {
+//	setvbuf(stdout, NULL, _IONBF, 0);
+//	setvbuf(stdout, NULL, _IONBF, 0);
+//	int i;
+//	printf("Enter information of students:\n");
+//
+//	// storing information
+//	for (i = 0; i < 5; ++i) {
+//		s[i].roll = i + 1;
+//		printf("\nFor roll number%d,\n", s[i].roll);
+//		printf("Enter first name: ");
+//		scanf("%s", s[i].firstName);
+//		printf("Enter marks: ");
+//		scanf("%f", &s[i].marks);
+//	}
+//	printf("Displaying Information:\n\n");
+//
+//	// displaying information
+//	for (i = 0; i < 5; ++i) {
+//		printf("\nRoll number: %d\n", i + 1);
+//		printf("First name: ");
+//		puts(s[i].firstName);
+//		printf("Marks: %.1f", s[i].marks);
+//		printf("\n");
+//	}
+//	return 0;
+//}

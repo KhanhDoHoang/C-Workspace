@@ -1,0 +1,40 @@
+19:01:51 **** Incremental Build of configuration Debug for project Test ****
+make all 
+Building file: ../src/Test.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Test.d" -MT"src/Test.o" -o "src/Test.o" "../src/Test.c"
+../src/Test.c: In function 'main':
+../src/Test.c:19:12: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   19 |  int *xp = x;
+      |            ^
+../src/Test.c:24:8: warning: too many arguments for format [-Wformat-extra-args]
+   24 |  scanf("&s", &arr);
+      |        ^~~~
+../src/Test.c:26:6: error: conflicting types for 'arr'
+   26 |  int arr[] = {2,3,4,1,6};
+      |      ^~~
+../src/Test.c:22:7: note: previous declaration of 'arr' was here
+   22 |  char arr[6];
+      |       ^~~
+../src/Test.c:27:11: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'int *' [-Wformat=]
+   27 |  printf("%u, %u, %u\n", arr, &arr[0], &arr);
+      |          ~^             ~~~
+      |           |             |
+      |           unsigned int  int *
+      |          %n
+../src/Test.c:27:15: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'int *' [-Wformat=]
+   27 |  printf("%u, %u, %u\n", arr, &arr[0], &arr);
+      |              ~^              ~~~~~~~
+      |               |              |
+      |               unsigned int   int *
+      |              %n
+../src/Test.c:27:19: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'int (*)[5]' [-Wformat=]
+   27 |  printf("%u, %u, %u\n", arr, &arr[0], &arr);
+      |                  ~^                   ~~~~
+      |                   |                   |
+      |                   unsigned int        int (*)[5]
+make: *** [src/subdir.mk:20: src/Test.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+19:01:51 Build Failed. 2 errors, 5 warnings. (took 325ms)
+
