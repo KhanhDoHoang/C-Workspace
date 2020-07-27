@@ -13,7 +13,7 @@ typedef struct Student{
 	int id;
 	char firstname[19];
 	char lastname[19];
-	Course course;
+	Course *course;
 
 } Student;
 
@@ -21,6 +21,7 @@ typedef struct Student{
 
 struct Student setStudent(void) {
 	Student student;
+
 	do{
 		printf("Enter ID: ");
 		scanf("%d", &student.id);
@@ -35,16 +36,6 @@ struct Student setStudent(void) {
 	scanf("%s", student.lastname);
 	//----------------------------
 
-	//student.course->courseCode = courseToAdd;
-	//free(courseToAdd);
-
-	printf("Enter course code: ");
-	scanf("%8s", student.course.courseCode);
-
-	printf("Enter course name: ");
-	scanf("%25s", student.course.courseName);
-
-	//free(courseNameToAdd);
 
 	return student;
 }
@@ -55,10 +46,8 @@ struct Student setStudent(void) {
 
 void getStudent(Student student){
 	printf("ID: %d\n", student.id);
-	printf("First name: %s\n", student.firstname);
-	printf("Last name: %s\n", student.lastname);
-	printf("Course code: %s\n", student.course.courseCode);
-	printf("Course name: %s\n", student.course.courseName);
+	printf("Student name: %s %s\n", student.firstname, student.lastname);
+	//printf("Last name: %s\n", );
 }
 
 /* *
@@ -73,20 +62,26 @@ int main(void){
 	int numberOfStudents;
 	scanf("%d", &numberOfStudents);
 	Student studArr[numberOfStudents];
+	Course courses[numberOfStudents];
 
 	for(int i = 0; i < numberOfStudents; i++){
 		printf("Enter information for %d student:\n", (i+1));
 		studArr[i] = setStudent();
+		studArr[i].course = &courses[i];
+		printf("Enter course code: ");
+		scanf("%s", studArr[i].course->courseCode);
+		printf("Enter course name: ");
+		scanf("%s", studArr[i].course->courseName);
 
 		//----------------------------------------------------------------------------------
 	}
 	for (int i = 0; i < numberOfStudents; i++) {
 		printf("\nStudent #%d Detail:\n", (i+1));
 		getStudent(studArr[i]);
-
+		printf("Course code: %s\n", courses[i].courseCode);
+		printf("Course name: %s\n", courses[i].courseName);
 	}
 
 	return 0;
 }
-
 

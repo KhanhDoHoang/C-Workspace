@@ -1,6 +1,6 @@
-14:58:51 **** Incremental Build of configuration Debug for project ExampleStruct ****
+13:21:19 **** Incremental Build of configuration Debug for project ExampleStruct ****
 make all 
 make: Nothing to be done for 'all'.
 
-14:58:51 Build Finished. 0 errors, 0 warnings. (took 104ms)
+13:21:19 Build Finished. 0 errors, 0 warnings. (took 92ms)
 
