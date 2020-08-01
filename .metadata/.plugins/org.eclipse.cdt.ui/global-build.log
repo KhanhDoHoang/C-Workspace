@@ -9215,3 +9215,128 @@ make: Nothing to be done for 'all'.
 16:04:45 **** Incremental Build of configuration Debug for project Lab 5 ****
 make all 
 make: Nothing to be done for 'all'.
+13:14:24 **** Build of configuration Debug for project Lab 5 ****
+make all 
+Building file: ../src/Lab 5.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lab 5.d" -MT"src/Lab\ 5.d" -o "src/Lab 5.o" "../src/Lab 5.c"
+Finished building: ../src/Lab 5.c
+ 
+Building target: Lab 5.exe
+Invoking: Cygwin C Linker
+gcc  -o "Lab 5.exe" ./src/Lab\ 5.o   
+Finished building target: Lab 5.exe
+ 
+13:14:27 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+make: Nothing to be done for 'all'.
+13:24:00 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+Building file: ../src/Lab 5.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lab 5.d" -MT"src/Lab\ 5.d" -o "src/Lab 5.o" "../src/Lab 5.c"
+Finished building: ../src/Lab 5.c
+ 
+Building target: Lab 5.exe
+Invoking: Cygwin C Linker
+gcc  -o "Lab 5.exe" ./src/Lab\ 5.o   
+Finished building target: Lab 5.exe
+ 
+13:34:28 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+Building file: ../src/Lab 5.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lab 5.d" -MT"src/Lab\ 5.d" -o "src/Lab 5.o" "../src/Lab 5.c"
+Finished building: ../src/Lab 5.c
+ 
+Building target: Lab 5.exe
+Invoking: Cygwin C Linker
+gcc  -o "Lab 5.exe" ./src/Lab\ 5.o   
+Finished building target: Lab 5.exe
+ 
+13:34:30 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+make: Nothing to be done for 'all'.
+13:35:04 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+Building file: ../src/Lab 5.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lab 5.d" -MT"src/Lab\ 5.d" -o "src/Lab 5.o" "../src/Lab 5.c"
+Finished building: ../src/Lab 5.c
+ 
+Building target: Lab 5.exe
+Invoking: Cygwin C Linker
+gcc  -o "Lab 5.exe" ./src/Lab\ 5.o   
+Finished building target: Lab 5.exe
+ 
+13:38:29 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+Building file: ../src/Lab 5.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lab 5.d" -MT"src/Lab\ 5.d" -o "src/Lab 5.o" "../src/Lab 5.c"
+Finished building: ../src/Lab 5.c
+ 
+Building target: Lab 5.exe
+Invoking: Cygwin C Linker
+gcc  -o "Lab 5.exe" ./src/Lab\ 5.o   
+Finished building target: Lab 5.exe
+ 
+13:38:51 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+Building file: ../src/Lab 5.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lab 5.d" -MT"src/Lab\ 5.d" -o "src/Lab 5.o" "../src/Lab 5.c"
+Finished building: ../src/Lab 5.c
+ 
+Building target: Lab 5.exe
+Invoking: Cygwin C Linker
+gcc  -o "Lab 5.exe" ./src/Lab\ 5.o   
+Finished building target: Lab 5.exe
+ 
+13:40:20 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+Building file: ../src/Lab 5.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lab 5.d" -MT"src/Lab\ 5.d" -o "src/Lab 5.o" "../src/Lab 5.c"
+Finished building: ../src/Lab 5.c
+ 
+Building target: Lab 5.exe
+Invoking: Cygwin C Linker
+gcc  -o "Lab 5.exe" ./src/Lab\ 5.o   
+Finished building target: Lab 5.exe
+ 
+13:40:34 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+Building file: ../src/Lab 5.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lab 5.d" -MT"src/Lab\ 5.d" -o "src/Lab 5.o" "../src/Lab 5.c"
+../src/Lab 5.c: In function 'main':
+../src/Lab 5.c:68:17: error: lvalue required as increment operand
+   68 |                 ++count++;
+      |                 ^~
+make: *** [src/subdir.mk:20: src/Lab 5.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:40:46 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+Building file: ../src/Lab 5.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lab 5.d" -MT"src/Lab\ 5.d" -o "src/Lab 5.o" "../src/Lab 5.c"
+Finished building: ../src/Lab 5.c
+ 
+Building target: Lab 5.exe
+Invoking: Cygwin C Linker
+gcc  -o "Lab 5.exe" ./src/Lab\ 5.o   
+Finished building target: Lab 5.exe
+ 
+23:11:46 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+make: Nothing to be done for 'all'.
+23:11:47 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+make: Nothing to be done for 'all'.
+23:13:49 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+make: Nothing to be done for 'all'.
+23:13:50 **** Incremental Build of configuration Debug for project Lab 5 ****
+make all 
+make: Nothing to be done for 'all'.

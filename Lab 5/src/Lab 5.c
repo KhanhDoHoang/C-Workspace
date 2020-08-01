@@ -6,17 +6,12 @@
 * 	Student #: <<< Hoang Do (do000075) >>>
 *
 *	Status:
-*		Requirement #1:  {complete xor incomplete}
-*		Requirement #2:  {complete xor incomplete}
-*		Requirement #3:  {complete xor incomplete}
-*		Requirement #4:  {complete xor incomplete}
-*		Requirement #5:  {complete xor incomplete}
-*		Requirement #6:  {complete xor incomplete}
-*		Requirement #7:  {complete xor incomplete}
-*		Requirement #8:  {complete xor incomplete}
-*		Requirement #9:  {complete xor incomplete}
-*		Requirement #10: {complete xor incomplete}
-*		Requirement #11: {complete xor incomplete}
+*		Requirement #1:  FileRead.txt in src/ : <<complete>>
+*		Requirement #2:  Open FileRead.txt read (only): <<complete>>
+*		Requirement #3:  Open FileOut.txt (only) <<complete>>
+*		Requirement #4:  Check file open for success <<complete>>
+*		Requirement #5:  Process FileRead.txt word-by-word <<complete>>
+*		Requirement #6:  Display total words and chars <<complete>>
 */
 
 #include <stdio.h>
@@ -84,9 +79,7 @@ int main(int argc, char *argv[])
     fclose(inFile);
 
     //Display the total number of words
-    fprintf(outFile, "\nThis file has %d words in it.", count);
     printf("\nThis file has %d words in it.", count);
-    fprintf(outFile, "\nThis file has %d characters in it.", charCount);
     printf("\nThis file has %d characters in it.", charCount);
     fclose(outFile);
     return EXIT_SUCCESS;
